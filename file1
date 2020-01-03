@@ -1,0 +1,11 @@
+def COLOR
+
+node('nodename'){
+
+    stage ('color') {
+
+        COLOR = "green"
+        echo "color is $COLOR"
+
+        sh '''COLOR=${COLOR}
+        echo $COLOR'''
